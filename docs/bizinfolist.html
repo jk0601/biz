@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>지원사업 공고 목록</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #d8d8d8;
+      --row-alt: #fafbfc;
+      --white: #ffffff;
+      --navy: #1a2d4a;
+      --navy-mid: #2a3f5c;
+      --silver-light: #c8d0da;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 1.25rem 0.85rem 2rem;
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+      font-size: 0.8125rem;
+      line-height: 1.55;
+      color: var(--text);
+      background: linear-gradient(165deg, #dfe4ea 0%, #edf1f5 42%, #f1f3f8 100%);
+    }
+    .sheet {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 1.1rem 1.25rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.06);
+    }
+    h1 {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+    .meta {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 11px;
+      table-layout: fixed;
+    }
+    th, td {
+      vertical-align: top;
+      word-break: break-word;
+    }
+    td {
+      border: 1px solid var(--border);
+      padding: 6px 8px;
+    }
+    th {
+      background: linear-gradient(180deg, var(--navy) 0%, var(--navy-mid) 100%);
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.7rem;
+      letter-spacing: 0.02em;
+      padding: 0.38rem 0.55rem;
+      text-align: left;
+      white-space: nowrap;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+      border-bottom: 1px solid var(--silver-light);
+      border-left: none;
+    }
+    th:first-child {
+      border-left: 1px solid rgba(255, 255, 255, 0.12);
+      border-top-left-radius: 10px;
+    }
+    th:last-child {
+      border-top-right-radius: 10px;
+    }
+    tbody tr:first-child td {
+      border-top: none;
+    }
+
+    tr:nth-child(even) td { background: var(--row-alt); }
+    th:nth-child(1), td:nth-child(1) { width: 88px; }
+    th:nth-child(2), td:nth-child(2) { width: 48px; }
+    th:nth-child(3), td:nth-child(3) { width: 22%; }
+    th:nth-child(4), td:nth-child(4) { width: 18%; }
+    th:nth-child(5), td:nth-child(5) { width: 52px; text-align: center; }
+    th:nth-child(6), td:nth-child(6) { width: 96px; }
+    .col-title { font-size: 11px; }
+    .col-url a {
+      color: #1565c0;
+      text-decoration: none;
+      font-size: 11px;
+    }
+    .col-url a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <h1><img src="img/favicon.ico" alt="favicon" style="width: 20px; height: 20px; vertical-align: middle;"> 지원사업 공고 목록</h1>
+    <hr>
+    <p class="meta">갱신: 2026-04-12 · 총 5건</p>
+    <table>
+      <thead><tr><th>등록일</th><th>지역</th><th>제목</th><th>지원분야</th><th>공고URL</th><th>접수마감일</th></tr></thead>
+      <tbody>
+        <tr><td>2026-04-10</td><td>경기</td><td class="col-title">화성시 2026년 AI-대중...</td><td>기술</td><td class="col-url"><a href="https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120636">링크</a></td><td>2026-04-24</td></tr><tr><td>2026-04-10</td><td>서울</td><td class="col-title">강남구 뉴스타트 인턴십 참여...</td><td>인력</td><td class="col-url"><a href="https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120640">링크</a></td><td>예산 소진시까지</td></tr><tr><td>2026-04-10</td><td>경기</td><td class="col-title">2026년 해외바이어 초청 ...</td><td>수출</td><td class="col-url"><a href="https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120646">링크</a></td><td>2026-04-24</td></tr><tr><td>2026-04-10</td><td>경기</td><td class="col-title">부천시 2026년 AI 활용...</td><td>수출</td><td class="col-url"><a href="https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120691">링크</a></td><td>2026-04-24</td></tr><tr><td>2026-04-10</td><td>경기</td><td class="col-title">부천시 2026년 일본 도쿄...</td><td>수출</td><td class="col-url"><a href="https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000120693">링크</a></td><td>2026-04-24</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
