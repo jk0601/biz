@@ -27,6 +27,8 @@ python main.py
 | `NOTION_TOKEN` | Notion 통합 토큰 |
 | `NOTION_DB_ID` | 대상 데이터베이스 ID |
 
+워크플로는 `python main.py`로 `docs/bizinfolist.html`을 만든 뒤, 내용이 바뀌었을 때만 해당 파일을 **커밋해 같은 브랜치에 푸시**합니다. 그래서 저장소에 있는 HTML이 스케줄·수동 실행마다 최신으로 맞춰집니다. (`main` 등에 브랜치 보호로 푸시가 막혀 있으면 이 단계는 실패할 수 있습니다.)
+
 ## 정적 HTML
 
-`docs/bizinfolist.html`은 실행 시마다 덮어씁니다. GitHub Pages 등으로 올릴 때는 이 파일(및 필요 시 `docs/img/favicon.ico`)을 함께 배포하면 됩니다.
+`docs/bizinfolist.html`은 실행 시마다 덮어씁니다. GitHub Pages는 보통 `main`의 `docs/`를 소스로 두면, 위 푸시와 맞물려 목록이 갱신됩니다.
