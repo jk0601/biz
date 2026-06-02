@@ -1,0 +1,22 @@
+name: Clean Old Workflow Runs
+
+on:
+  workflow_dispatch: # Actions 탭에서 수동으로 실행 버튼을 누를 수 있게 합니다.
+  schedule:
+    # ⭐️ 매주 일요일 새벽 0시(한국 시간 오전 9시)에 자동으로 실행
+    - cron: '0 0 * * 0'
+
+permissions:
+  actions: write # 토큰이 삭제 권한을 가질 수 있도록 명시합니다.
+
+jobs:
+  del_runs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          retain_days: 0 # 최근 실행된 것 외에 과거 기록을 모두 지웁니다.
+          keep_minimum_runs: 10 # 2~7페이지만 지우고 최신 1~2페이지(약 10~20개)는 남겨두려면 이 숫자를 10이나 20으로 조절하세요!
